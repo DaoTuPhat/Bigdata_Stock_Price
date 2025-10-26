@@ -39,6 +39,20 @@ Như vậy ta đã lưu trữ dữ liệu chứng khoán thành công, có thể
 
 Việc demo thực thi xử lý dữ liệu được thực hiện trên pyspark-notebook, xem file Stock_price_demo.ipynb trong thư mục notebook.
 
+Trong quá trình chạy chương trình có thể xảy ra lỗi xung đột phiên bản, có thể khắc phục bằng cách sau:
+
+Mở terminal trên cổng http://localhost:8888/lab/tree/work
+
+Chạy các lệnh sau:
+```
+conda create --name stock_price python=3.10
+
+pip install -r requirements.txt
+
+python -m ipykernel install --user --name=stock_price --display-name="stock_price"
+```
+
+Sau đó, trong phần chuyển sang kernel "stock_price" để thực thi chương trình.
 
 
 
